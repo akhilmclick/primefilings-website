@@ -63,7 +63,7 @@ const ExpandedServices = () => {
 
         <div className="expanded-footer text-center fade-up" style={{ animationDelay: '0.4s' }}>
           <p className="text-gray-600 mb-4">Not sure which registration you need?</p>
-          <a href="https://wa.me/919876543210?text=Hi,%20I%20need%20help%20choosing%20a%20service." target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+          <a href="https://wa.me/918693048667?text=Hi,%20I%20need%20help%20choosing%20a%20service." target="_blank" rel="noopener noreferrer" className="btn btn-primary">
             Get Free Guidance on WhatsApp
           </a>
         </div>

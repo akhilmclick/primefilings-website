@@ -2,7 +2,7 @@ import React from 'react';
 import './WhatsAppCTA.css';
 
 const WhatsAppCTA = () => {
-  const phoneNumber = "919876543210";
+  const phoneNumber = "918693048667";
   const message = "Hi, I want to register my business!";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

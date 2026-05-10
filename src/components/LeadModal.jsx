@@ -75,7 +75,7 @@ const LeadModal = () => {
 
     setSuccess(true);
 
-    const businessNumber = "919876543210";
+    const businessNumber = "918693048667";
     const text = `Hi, I'm ${formData.name} and I'm interested in ${formData.service}. My email is ${formData.email}. Please help me get started.`;
     const whatsappUrl = `https://wa.me/${businessNumber}?text=${encodeURIComponent(text)}`;
 
