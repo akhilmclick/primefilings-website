@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useModal } from '../context/ModalContext';
 import { X, Lock } from 'lucide-react';
+import { supabase } from '../lib/supabaseClient';
 import './LeadModal.css';
 
 const LeadModal = () => {
@@ -36,7 +37,7 @@ const LeadModal = () => {
     if (error) setError('');
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.phone || !formData.service) {
       setError('Please fill in all fields.');
@@ -47,10 +48,30 @@ const LeadModal = () => {
       return;
     }
 
-    // Backup to local storage
-    const leads = JSON.parse(localStorage.getItem('primefilings_leads') || '[]');
-    leads.push({ ...formData, timestamp: new Date().toISOString() });
-    localStorage.setItem('primefilings_leads', JSON.stringify(leads));
+    try {
+      // Insert into Supabase
+      const { error: supabaseError } = await supabase
+        .from('leads')
+        .insert([
+          {
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            service: formData.service,
+            source: 'modal'
+          }
+        ]);
+
+      if (supabaseError) {
+        console.error("Error inserting into Supabase:", supabaseError);
+        // Fallback to local storage if Supabase fails
+        const leads = JSON.parse(localStorage.getItem('primefilings_leads') || '[]');
+        leads.push({ ...formData, timestamp: new Date().toISOString() });
+        localStorage.setItem('primefilings_leads', JSON.stringify(leads));
+      }
+    } catch (err) {
+      console.error("Unexpected error during Supabase insert:", err);
+    }
 
     setSuccess(true);
 

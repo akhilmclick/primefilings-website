@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Lock } from 'lucide-react';
+import { supabase } from '../lib/supabaseClient';
 import './LeadCapture.css';
 
 const LeadCapture = () => {
@@ -10,9 +11,28 @@ const LeadCapture = () => {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Simulate form submission
+    
+    try {
+      const { error } = await supabase
+        .from('leads')
+        .insert([
+          {
+            name: formData.name,
+            phone: formData.phone,
+            service: formData.service,
+            source: 'footer'
+          }
+        ]);
+
+      if (error) {
+        console.error("Supabase insert error:", error);
+      }
+    } catch (err) {
+      console.error("Unexpected error during Supabase insert:", err);
+    }
+
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
