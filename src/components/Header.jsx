@@ -45,10 +45,11 @@ const Header = () => {
     window.scrollTo(0, 0);
   };
 
-  const handleServiceClick = (route, serviceName) => {
+  const handleServiceClick = (route) => {
     setIsMobileMenuOpen(false);
     setIsMegaMenuOpen(false);
-    openModal(serviceName);
+    navigate(route);
+    window.scrollTo(0, 0);
   };
 
   const toggleAccordion = (index) => {
@@ -129,7 +130,7 @@ const Header = () => {
                       <ul className="mega-menu-links">
                         {col.items.map((item, i) => (
                           <li key={i}>
-                            <button onClick={() => handleServiceClick(item.route, item.name)} className="mega-menu-link">
+                            <button onClick={() => handleServiceClick(item.route)} className="mega-menu-link">
                               {item.name} <ChevronRight size={14} className="mega-menu-arrow" />
                             </button>
                           </li>
@@ -170,7 +171,7 @@ const Header = () => {
                       <ul>
                         {col.items.map((item, i) => (
                           <li key={i}>
-                            <button onClick={() => handleServiceClick(item.route, item.name)} className="mobile-accordion-link">
+                            <button onClick={() => handleServiceClick(item.route)} className="mobile-accordion-link">
                               {item.name}
                             </button>
                           </li>
