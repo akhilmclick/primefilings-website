@@ -1,0 +1,96 @@
+.lead-capture-section {
+  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.lead-capture-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 80% 20%, rgba(249, 115, 22, 0.2), transparent 40%);
+  z-index: 0;
+}
+
+.lead-capture-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.form-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.lead-form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.form-input, .form-select {
+  flex: 1;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.9);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-gray-800);
+}
+
+.form-input:focus, .form-select:focus {
+  outline: none;
+  border-color: var(--color-saffron);
+  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.2);
+}
+
+.submit-btn {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.privacy-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+}
+
+.lock-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.success-message {
+  text-align: center;
+  color: var(--color-white);
+  padding: 2rem;
+}
+
+.success-message h3 {
+  color: var(--color-green);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .lead-form {
+    flex-direction: column;
+  }
+  
+  .form-input, .form-select, .submit-btn {
+    width: 100%;
+  }
+}
