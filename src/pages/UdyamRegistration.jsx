@@ -5,10 +5,10 @@ import './ServicePage.css';
 
 const UdyamRegistration = () => {
   useEffect(() => {
-    document.title = "Online UDYAM (MSME) Registration | Primefilings";
+    document.title = "Online UDYAM (MSME) Registration | Filing Pilot";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.content = "Get your UDYAM (MSME) Registration online in just 2 days. Unlock government subsidies, priority bank loans, and trademark discounts with Primefilings.";
+      metaDesc.content = "Get your UDYAM (MSME) Registration online in just 2 days. Unlock government subsidies, priority bank loans, and trademark discounts with Filing Pilot.";
     }
   }, []);
 

@@ -5,7 +5,7 @@ import './ServicePage.css';
 
 const ItrFiling = () => {
   useEffect(() => {
-    document.title = "ITR Filing for Proprietors | Primefilings";
+    document.title = "ITR Filing for Proprietors | Filing Pilot";
     window.scrollTo(0, 0);
   }, []);
 
@@ -18,7 +18,7 @@ const ItrFiling = () => {
           </div>
           <h1 className="hero-title fade-up">ITR Filing for Proprietors</h1>
           <p className="hero-subtitle fade-up" style={{ animationDelay: '0.2s' }}>
-            Get your ITR Filing for Proprietors quickly and hassle-free with expert assistance from Primefilings.
+            Get your ITR Filing for Proprietors quickly and hassle-free with expert assistance from Filing Pilot.
           </p>
         </div>
       </section>

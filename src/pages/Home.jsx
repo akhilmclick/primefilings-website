@@ -11,7 +11,7 @@ import LeadCapture from '../components/LeadCapture';
 
 const Home = () => {
   useEffect(() => {
-    document.title = "GST | FSSAI | UDYAM Registration for Sole Proprietors | Primefilings";
+    document.title = "GST | FSSAI | UDYAM Registration for Sole Proprietors | Filing Pilot";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.content = "Register your business online with expert help. GST, FSSAI & UDYAM registration starting at ₹499. Fast, secure, and 100% online. Talk to us on WhatsApp.";

@@ -104,8 +104,8 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container header-container">
         <div className="logo" onClick={goHome}>
-          <img src="/logo.png" alt="Primefilings Logo" className="logo-img" />
-          <span className="logo-text">Primefilings</span>
+          <img src="/logo-new.png" alt="Filing Pilot Logo" className="logo-img" />
+          <span className="logo-text">Filing Pilot</span>
         </div>
 
         <nav className={`nav ${isMobileMenuOpen ? 'open' : ''}`}>
@@ -141,7 +141,7 @@ const Header = () => {
                 </div>
               </div>
               <div className="mega-menu-footer">
-                <a href="https://wa.me/918693048667?text=Hi,%20I%20need%20help%20choosing%20a%20service." target="_blank" rel="noopener noreferrer" className="mega-menu-cta">
+                <a href="https://wa.me/918652406639?text=Hi,%20I%20need%20help%20choosing%20a%20service." target="_blank" rel="noopener noreferrer" className="mega-menu-cta">
                   <PhoneCall size={18} /> Need help choosing? Chat with us &rarr;
                 </a>
               </div>

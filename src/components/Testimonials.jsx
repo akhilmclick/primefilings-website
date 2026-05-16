@@ -15,7 +15,7 @@ const Testimonials = () => {
       name: "Rahul M.",
       location: "Mumbai",
       business: "Freelance Designer",
-      quote: "GST registration was a headache until I found Primefilings. Super fast and transparent.",
+      quote: "GST registration was a headache until I found Filing Pilot. Super fast and transparent.",
       delay: "0.2s"
     },
     {

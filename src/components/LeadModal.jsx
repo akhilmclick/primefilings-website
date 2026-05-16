@@ -65,9 +65,9 @@ const LeadModal = () => {
       if (supabaseError) {
         console.error("Error inserting into Supabase:", supabaseError);
         // Fallback to local storage if Supabase fails
-        const leads = JSON.parse(localStorage.getItem('primefilings_leads') || '[]');
+        const leads = JSON.parse(localStorage.getItem('filingpilot_leads') || '[]');
         leads.push({ ...formData, timestamp: new Date().toISOString() });
-        localStorage.setItem('primefilings_leads', JSON.stringify(leads));
+        localStorage.setItem('filingpilot_leads', JSON.stringify(leads));
       }
     } catch (err) {
       console.error("Unexpected error during Supabase insert:", err);
@@ -75,7 +75,7 @@ const LeadModal = () => {
 
     setSuccess(true);
 
-    const businessNumber = "918693048667";
+    const businessNumber = "918652406639";
     const text = `Hi, I'm ${formData.name} and I'm interested in ${formData.service}. My email is ${formData.email}. Please help me get started.`;
     const whatsappUrl = `https://wa.me/${businessNumber}?text=${encodeURIComponent(text)}`;
 

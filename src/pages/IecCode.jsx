@@ -5,7 +5,7 @@ import './ServicePage.css';
 
 const IecCode = () => {
   useEffect(() => {
-    document.title = "IEC Code (Import Export Code) | Primefilings";
+    document.title = "IEC Code (Import Export Code) | Filing Pilot";
     window.scrollTo(0, 0);
   }, []);
 
@@ -18,7 +18,7 @@ const IecCode = () => {
           </div>
           <h1 className="hero-title fade-up">IEC Code (Import Export Code)</h1>
           <p className="hero-subtitle fade-up" style={{ animationDelay: '0.2s' }}>
-            Get your IEC Code (Import Export Code) quickly and hassle-free with expert assistance from Primefilings.
+            Get your IEC Code (Import Export Code) quickly and hassle-free with expert assistance from Filing Pilot.
           </p>
         </div>
       </section>

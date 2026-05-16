@@ -5,7 +5,7 @@ import './ServicePage.css';
 
 const Dsc = () => {
   useEffect(() => {
-    document.title = "Digital Signature Certificate (DSC) | Primefilings";
+    document.title = "Digital Signature Certificate (DSC) | Filing Pilot";
     window.scrollTo(0, 0);
   }, []);
 
@@ -18,7 +18,7 @@ const Dsc = () => {
           </div>
           <h1 className="hero-title fade-up">Digital Signature Certificate (DSC)</h1>
           <p className="hero-subtitle fade-up" style={{ animationDelay: '0.2s' }}>
-            Get your Digital Signature Certificate (DSC) quickly and hassle-free with expert assistance from Primefilings.
+            Get your Digital Signature Certificate (DSC) quickly and hassle-free with expert assistance from Filing Pilot.
           </p>
         </div>
       </section>

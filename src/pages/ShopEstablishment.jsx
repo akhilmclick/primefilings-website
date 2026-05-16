@@ -5,7 +5,7 @@ import './ServicePage.css';
 
 const ShopEstablishment = () => {
   useEffect(() => {
-    document.title = "Shop & Establishment License | Primefilings";
+    document.title = "Shop & Establishment License | Filing Pilot";
     window.scrollTo(0, 0);
   }, []);
 
@@ -18,7 +18,7 @@ const ShopEstablishment = () => {
           </div>
           <h1 className="hero-title fade-up">Shop & Establishment License</h1>
           <p className="hero-subtitle fade-up" style={{ animationDelay: '0.2s' }}>
-            Get your Shop & Establishment License quickly and hassle-free with expert assistance from Primefilings.
+            Get your Shop & Establishment License quickly and hassle-free with expert assistance from Filing Pilot.
           </p>
         </div>
       </section>

@@ -5,10 +5,10 @@ import './ServicePage.css';
 
 const FssaiLicense = () => {
   useEffect(() => {
-    document.title = "FSSAI Food License Registration | Primefilings";
+    document.title = "FSSAI Food License Registration | Filing Pilot";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.content = "Apply for FSSAI License online with Primefilings. Mandatory for food businesses, restaurants, and home bakers. Transparent pricing and expert support.";
+      metaDesc.content = "Apply for FSSAI License online with Filing Pilot. Mandatory for food businesses, restaurants, and home bakers. Transparent pricing and expert support.";
     }
   }, []);
 

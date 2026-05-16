@@ -5,7 +5,7 @@ import './ServicePage.css';
 
 const BisIsi = () => {
   useEffect(() => {
-    document.title = "BIS/ISI Mark Registration | Primefilings";
+    document.title = "BIS/ISI Mark Registration | Filing Pilot";
     window.scrollTo(0, 0);
   }, []);
 
@@ -18,7 +18,7 @@ const BisIsi = () => {
           </div>
           <h1 className="hero-title fade-up">BIS/ISI Mark Registration</h1>
           <p className="hero-subtitle fade-up" style={{ animationDelay: '0.2s' }}>
-            Get your BIS/ISI Mark Registration quickly and hassle-free with expert assistance from Primefilings.
+            Get your BIS/ISI Mark Registration quickly and hassle-free with expert assistance from Filing Pilot.
           </p>
         </div>
       </section>

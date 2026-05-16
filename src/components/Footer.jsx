@@ -10,8 +10,8 @@ const Footer = () => {
           
           <div className="footer-brand">
             <div className="logo mb-4">
-              <img src="/logo.png" alt="Primefilings Logo" className="logo-img" />
-              <span className="logo-text">Primefilings</span>
+              <img src="/logo-new.png" alt="Filing Pilot Logo" className="logo-img" />
+              <span className="logo-text">Filing Pilot</span>
             </div>
             <p className="footer-tagline">Making business compliance simple, fast, and secure for Indian entrepreneurs.</p>
           </div>
@@ -31,11 +31,11 @@ const Footer = () => {
             <ul>
               <li>
                 <Phone className="contact-icon" />
-                <span>+91 98765 43210</span>
+                <span>+91 86524 06639</span>
               </li>
               <li>
                 <Mail className="contact-icon" />
-                <span>support@primefilings.com</span>
+                <span>support@filingpilot.in</span>
               </li>
               <li>
                 <MapPin className="contact-icon" />
@@ -48,7 +48,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <div className="copyright">
-            &copy; 2025 Primefilings. All Rights Reserved. | MSME & Startup-Friendly Services
+            &copy; 2025 Filing Pilot. All Rights Reserved. | MSME & Startup-Friendly Services
           </div>
           <div className="legal-links">
             <a href="#">Privacy Policy</a>

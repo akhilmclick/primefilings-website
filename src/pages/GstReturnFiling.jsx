@@ -5,7 +5,7 @@ import './ServicePage.css';
 
 const GstReturnFiling = () => {
   useEffect(() => {
-    document.title = "GST Return Filing | Primefilings";
+    document.title = "GST Return Filing | Filing Pilot";
     window.scrollTo(0, 0);
   }, []);
 
@@ -18,7 +18,7 @@ const GstReturnFiling = () => {
           </div>
           <h1 className="hero-title fade-up">GST Return Filing</h1>
           <p className="hero-subtitle fade-up" style={{ animationDelay: '0.2s' }}>
-            Get your GST Return Filing quickly and hassle-free with expert assistance from Primefilings.
+            Get your GST Return Filing quickly and hassle-free with expert assistance from Filing Pilot.
           </p>
         </div>
       </section>

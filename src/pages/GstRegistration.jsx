@@ -5,7 +5,7 @@ import './ServicePage.css';
 
 const GstRegistration = () => {
   useEffect(() => {
-    document.title = "Online GST Registration in India | Primefilings";
+    document.title = "Online GST Registration in India | Filing Pilot";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.content = "Get your GST Registration online quickly and hassle-free. Expert CA assistance, transparent pricing starting at ₹499. Apply now to sell legally across India.";

@@ -61,7 +61,7 @@ const WhyChooseUs = () => {
           </div>
 
           <div className="benefits-content fade-up" style={{ animationDelay: '0.2s' }}>
-            <h2 className="section-title text-navy">Why Thousands Trust Primefilings</h2>
+            <h2 className="section-title text-navy">Why Thousands Trust Filing Pilot</h2>
             <p className="subtitle text-gray-600 mb-8">We take the complexity out of compliance so you can focus on growing your business.</p>
             
             <ul className="benefits-list">

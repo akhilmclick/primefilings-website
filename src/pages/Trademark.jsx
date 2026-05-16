@@ -5,7 +5,7 @@ import './ServicePage.css';
 
 const Trademark = () => {
   useEffect(() => {
-    document.title = "Trademark Registration | Primefilings";
+    document.title = "Trademark Registration | Filing Pilot";
     window.scrollTo(0, 0);
   }, []);
 
@@ -18,7 +18,7 @@ const Trademark = () => {
           </div>
           <h1 className="hero-title fade-up">Trademark Registration</h1>
           <p className="hero-subtitle fade-up" style={{ animationDelay: '0.2s' }}>
-            Get your Trademark Registration quickly and hassle-free with expert assistance from Primefilings.
+            Get your Trademark Registration quickly and hassle-free with expert assistance from Filing Pilot.
           </p>
         </div>
       </section>

@@ -5,7 +5,7 @@ import './ServicePage.css';
 
 const ProfessionalTax = () => {
   useEffect(() => {
-    document.title = "Professional Tax Registration | Primefilings";
+    document.title = "Professional Tax Registration | Filing Pilot";
     window.scrollTo(0, 0);
   }, []);
 
@@ -18,7 +18,7 @@ const ProfessionalTax = () => {
           </div>
           <h1 className="hero-title fade-up">Professional Tax Registration</h1>
           <p className="hero-subtitle fade-up" style={{ animationDelay: '0.2s' }}>
-            Get your Professional Tax Registration quickly and hassle-free with expert assistance from Primefilings.
+            Get your Professional Tax Registration quickly and hassle-free with expert assistance from Filing Pilot.
           </p>
         </div>
       </section>

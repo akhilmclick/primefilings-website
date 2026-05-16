@@ -5,7 +5,7 @@ import './ServicePage.css';
 
 const CurrentAccount = () => {
   useEffect(() => {
-    document.title = "Current Account Assistance | Primefilings";
+    document.title = "Current Account Assistance | Filing Pilot";
     window.scrollTo(0, 0);
   }, []);
 
@@ -18,7 +18,7 @@ const CurrentAccount = () => {
           </div>
           <h1 className="hero-title fade-up">Current Account Assistance</h1>
           <p className="hero-subtitle fade-up" style={{ animationDelay: '0.2s' }}>
-            Get your Current Account Assistance quickly and hassle-free with expert assistance from Primefilings.
+            Get your Current Account Assistance quickly and hassle-free with expert assistance from Filing Pilot.
           </p>
         </div>
       </section>

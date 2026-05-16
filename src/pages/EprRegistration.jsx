@@ -5,7 +5,7 @@ import './ServicePage.css';
 
 const EprRegistration = () => {
   useEffect(() => {
-    document.title = "EPR Registration | Primefilings";
+    document.title = "EPR Registration | Filing Pilot";
     window.scrollTo(0, 0);
   }, []);
 
@@ -18,7 +18,7 @@ const EprRegistration = () => {
           </div>
           <h1 className="hero-title fade-up">EPR Registration</h1>
           <p className="hero-subtitle fade-up" style={{ animationDelay: '0.2s' }}>
-            Get your EPR Registration quickly and hassle-free with expert assistance from Primefilings.
+            Get your EPR Registration quickly and hassle-free with expert assistance from Filing Pilot.
           </p>
         </div>
       </section>

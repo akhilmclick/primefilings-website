@@ -5,7 +5,7 @@ import './ServicePage.css';
 
 const TradeLicense = () => {
   useEffect(() => {
-    document.title = "Trade License | Primefilings";
+    document.title = "Trade License | Filing Pilot";
     window.scrollTo(0, 0);
   }, []);
 
@@ -18,7 +18,7 @@ const TradeLicense = () => {
           </div>
           <h1 className="hero-title fade-up">Trade License</h1>
           <p className="hero-subtitle fade-up" style={{ animationDelay: '0.2s' }}>
-            Get your Trade License quickly and hassle-free with expert assistance from Primefilings.
+            Get your Trade License quickly and hassle-free with expert assistance from Filing Pilot.
           </p>
         </div>
       </section>
