@@ -187,7 +187,10 @@ const Header = () => {
           <button className="nav-link" onClick={() => scrollTo('how-it-works')}>How It Works</button>
           <button className="nav-link" onClick={() => scrollTo('pricing')}>Pricing</button>
           <button className="nav-link" onClick={() => scrollTo('faq')}>FAQ</button>
-          <button className="btn btn-primary md-ml" onClick={() => scrollTo('contact')}>Get Started</button>
+          <div className="flex items-center gap-4 md-ml">
+            <a href="tel:+918652406639" className="btn btn-outline"><PhoneCall size={18} /> Get on a Call</a>
+            <button className="btn btn-primary" onClick={() => scrollTo('contact')}>Get Started</button>
+          </div>
         </nav>
 
         <button 

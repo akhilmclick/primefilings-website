@@ -35,7 +35,7 @@ const Footer = () => {
               </li>
               <li>
                 <Mail className="contact-icon" />
-                <span>support@filingpilot.in</span>
+                <span>info@filingpilot.in</span>
               </li>
               <li>
                 <MapPin className="contact-icon" />
